@@ -1,0 +1,298 @@
+:root{
+    --black-color: #010101;
+    --main-color: #007ea7;
+    --alt-color: #00a8e8;
+    --main-transition: 0.5s;
+}
+body{
+    scroll-behavior: smooth;
+}
+.main-color{
+    color: var(--main-color);
+}
+.back-color{
+    background-color: var(--main-color);
+}
+.back-light{
+    background-color: #fff;
+}
+.green{
+    color: rgb(11, 189, 49);
+}
+.yellow{
+    color: rgb(226, 196, 22);
+}
+.back-green{
+    background-color: rgb(12, 136, 12);
+}
+.red{
+    color: rgb(250, 45, 45);
+}
+.back-red{
+    background-color: rgb(241, 47, 47);
+}
+a,
+.black{
+    text-decoration: none;
+    color: #051924;
+}
+.back-gray{
+    background-color: #dadbda;
+}
+.gray{
+    color: rgb(168, 166, 166);
+}
+.black-back{
+    background-color: #051924;
+}
+.active{
+    color: var(--main-color);
+}
+/* Start Carousel */
+.carousel .carousel-inner .carousel-item{
+    height: 100vh;
+}
+@media(max-width: 768px){
+    .carousel{
+        height: 100vh;
+    }
+    .carousel .carousel-inner{
+        height: 100%;
+    }
+    .carousel .carousel-inner .carousel-item{
+        height: 100%;
+    }
+}
+.carousel-indicators [data-bs-target]{
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+.carousel .carousel-inner .carousel-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #010101d8;
+}
+.carousel .carousel-item .carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.carousel .link {
+    top: 60%;
+}
+.carousel .link .btn{
+    background-color: var(--main-color);
+    transition: var(--main-transition);
+}
+.carousel .link .btn:hover
+,.login form .btn:hover
+,.register form .btn:hover{
+    background-color: var(--alt-color);
+}
+@media(max-width: 768px){
+    .carousel .carousel-item .carousel-caption{
+        width: 100%;
+    }
+}
+/* End Carousel */
+/* Start Login and Register and Reservation*/
+.login
+,.register{
+    background-image: linear-gradient(
+        to right,
+        #003459,
+        #007ea7,
+        #00a8e8
+    );
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.login .img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0101015e;
+}
+.login form .form-control
+,.pay form .form-control
+,.pay form .btn{
+    width: 300px;
+}
+.register form{
+    background-color: #ffffffaf;
+}
+.register form input
+,.reservation form .form-control{
+    width: 250px;
+}
+@media(max-width: 768px){
+    .register form .input
+    ,.reservation form .input{
+        flex-direction: column;
+    }
+}
+.login form .form-control::placeholder
+,.register form .form-control::placeholder
+,.reservation form .form-control::placeholder{
+    transition: 1s;
+}
+.login form .form-control:focus::placeholder
+,.register form .form-control:focus::placeholder
+,.reservation form .form-control:focus::placeholder{
+    opacity: 0;
+}
+.login a > svg
+,.login form a{
+    transition: var(--main-transition);
+}
+.login a > svg:hover
+,.login form a:hover
+,.register form a > svg:hover
+,.reservation form a > svg:hover{
+    color: var(--alt-color);
+}
+/* End Login and Register */
+/* Start Halls */
+.halls form .dropdown .dropdown-toggle{
+    background-color: #fff;
+}
+.halls form .dropdown .dropdown-toggle:hover{
+    color: #fff;
+    background-color: var(--alt-color);
+    width: 250px;
+}
+.halls form .dropdown .dropdown-menu{
+    left: 50%;
+    top: 43px;
+    transform: translateX(-50%);
+    border-radius: 0;
+}
+.halls .box{
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.25) 0px 7px 25px 2px;
+}
+.halls .box .img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #010101b6;
+    transition: var(--main-transition);
+}
+.halls .box:hover .img::before{
+    height: 100%;
+}
+.home .link{
+    background-color: #ffff;
+    box-shadow: rgba(0,0,0,0.25) 0px 7px 25px 2px;
+}
+.home .link a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+/* End Halls */
+/* Start Halls Content */
+.halls-content ul li a:hover{
+    color: var(--alt-color);
+}
+.halls-content .carousel .carousel-inner {
+    height: 400px;
+}
+.halls-content .carousel .carousel-inner .carousel-item::before{
+    background-color: #0101015b;
+}
+button.carousel-control-next-icon {
+    background-color: var(--main-color);
+}
+/* End Halls Content */
+/* Start Reservation-Info */
+.reserv .container ul li a:hover{
+    color: var(--main-color);
+}
+.reserv .container .prev{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.reserv .container .prev .content .list-group{
+    width: 700px;
+}
+@media(max-width: 768px){
+    .reserv .container .prev .content .list-group{
+        width: 300px;
+    }
+}
+.reserv .container .prev .content .list-group li{
+    text-align: start;
+    background-color: #cacaca5e;
+}
+/* End Reservation-Info */
+/* Start Support */
+.support .container .supp-form .form-control{
+    height: 350px;
+    background-color: #007da710;
+}
+.support .container .supp-form input:hover{
+    background-color: var(--alt-color);
+}
+/* End Support */
+/* Start Profile */
+.profile{
+    background-color: rgb(224, 224, 224);
+    height: 100vh;
+}
+.profile .profile-box{
+    background-color: #fff;
+    margin-top: 100px;
+}
+.profile .profile-box .img{
+    left: -20px;
+    top: -30px;
+}
+@media(max-width: 767px){
+    .profile .profile-box .img{
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+    }
+}
+.profile .profile-box .img svg{
+    border: 15px solid rgb(224, 224, 224);
+}
+.profile .profile-box .main-info svg{
+    background-color: white;
+    margin-top: 15px;
+    box-shadow: rgba(0,0,0,0.25) 0px 7px 25px 2px;
+}
+.profile .profile-box .main-info input{
+    width: 300px;
+    max-width: 100%;
+}
+@media(max-width: 767px){
+    .profile .profile-box .main-info input{
+        width: 280px;
+    }
+}
+/* End Profile */
+/* Start Payment */
+.pay form .btn:hover
+,.pay .modal .modal-footer button:hover{
+    background-color: var(--alt-color);
+}
+/* End Payment */
