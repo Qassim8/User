@@ -1,6 +1,7 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import '../../Style/main.css';
+import {imgOne} from '../../Images/hall-1.jpg';
 
 const Login = () => {
     const navigate= useNavigate()
@@ -11,7 +12,7 @@ const Login = () => {
                     <div className="row g-0">
                         <div className="col-md-6">
                             <div className="img position-relative">
-                                <img src="../../Images/hall-3.jpg" alt="login" className="img-fluid "></img>
+                                <img src="" alt="login" className="img-fluid "></img>
                             </div>
                         </div>
                         <div className="col-md-6 bg-white position-relative d-flex justify-content-center align-items-center">
