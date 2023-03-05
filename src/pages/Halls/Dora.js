@@ -1,11 +1,12 @@
 import React from "react";
+import * as Icons from "heroicons-react";
 
 const Dora = () => {
     return(
         <>
     <div className="halls-content" dir="rtl">
     <div className="head d-flex align-items-center back-color py-3">
-        <a href="/home" className="pt-2 pe-3"><i className="fa-solid fa-arrow-left text-white"></i></a>
+        <a href="/home" className="pt-2 pe-3"><Icons.ArrowLeft className=" text-white"/></a>
         <div className="mx-auto text-center text-white fs-5">
             درة بحري
         </div>
@@ -81,11 +82,11 @@ const Dora = () => {
                     <div className="d-flex align-items-center pb-1">
                         <div className="element d-flex align-items-center ms-5">
                             <p className="fs-5 ms-3">0995683472</p>
-                            <i className="fa-solid fa-phone main-color"></i>
+                            <Icons.Phone className="main-color"/>
                         </div>
                         <a href="#" className="element d-flex align-items-center">
                             <p className="fs-5 ms-3">تواصل عبر البريد</p>
-                            <i className="fa-solid fa-message main-color"></i>
+                            <Icons.Mail className="main-color"/>
                         </a>
                     </div>
                     <p className="fw-bold mb-0">العنوان</p>

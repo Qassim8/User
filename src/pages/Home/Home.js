@@ -1,3 +1,4 @@
+import { BookOpen, CalendarOutline, ChatAlt2, DotsCircleHorizontal } from "heroicons-react";
 import React from "react";
 import '../../Style/main.css';
 
@@ -96,18 +97,18 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <nav className="link text-center position-fixed bottom-0 w-100">
+        <nav className="link text-center align-items-center position-fixed bottom-0 w-100">
             <div className="container d-flex justify-content-between align-items-center">
                 <a href="/reserv" className="d-flex flex-column justify-content-center w-100 pt-3">
-                    <i className="fa-solid fa-book fs-4"></i>
+                    <BookOpen className=""/>
                     <p className="fs-5">الحجوزات</p>
                 </a>
                 <a href="/support" className="d-flex flex-column justify-content-center w-100 pt-3">
-                    <i className="fa-solid fa-message fs-4"></i>
+                    <ChatAlt2 className="fs-4"/>
                     <p className="fs-5">الدعم</p>
                 </a>
                 <a href="/about" className="d-flex flex-column justify-content-center w-100 pt-3">
-                    <i className="fa-solid fa-ellipsis-h fs-4"></i>
+                    <DotsCircleHorizontal className="fs-4"/>
                     <p className="fs-5">المزيد</p>
                 </a>
             </div>
